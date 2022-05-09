@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flash_scrn_bg"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/animatedRocketView"
+        android:layout_width="369dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flash_rocket_img" />
+
+    <TextView
+        android:id="@+id/logoView"
+        android:layout_width="393dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/bangers"
+        android:text="Rocket-Science!!!"
+        android:textAlignment="center"
+        android:textColor="#0629F1"
+        android:textColorHighlight="#C82A2A"
+        android:textIsSelectable="false"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sloganView"
+        android:layout_width="326dp"
+        android:layout_height="59dp"
+        android:fontFamily="@font/bilbo_swash_caps"
+        android:text="your world is covered "
+        android:textAlignment="viewEnd"
+        android:textColor="#F10606"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

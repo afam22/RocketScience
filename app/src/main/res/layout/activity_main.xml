@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appName"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <!-- Circular Image View  -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="129dp"
+        android:layout_height="164dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/rocketsciencememoji"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="256dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="91dp"
+        android:hint="Enter username"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="257dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="2dp"
+        android:hint="Enter password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:onClick="setBtnLogin"
+        android:text="Sign In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <TextView
+        android:id="@+id/DoNotHave"
+        android:layout_width="228dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="435dp"
+        android:text="Don't have an account?"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="422dp"
+        android:layout_marginEnd="65dp"
+        android:text="Sign Up!"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#EA0909"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="450dp"
+        android:text="Forgot Password?"
+        android:textAllCaps="false"
+        android:textColor="#090909"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnSignUp"-->
+    <!--        android:layout_width="146dp"-->
+    <!--        android:layout_height="51dp"-->
+    <!--        android:layout_marginTop="34dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:background="?attr/borderlessButtonStyle"-->
+    <!--        android:text="Sign Up!"-->
+    <!--        android:textAlignment="textStart"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textColor="#E30B0B"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/etPassword" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
